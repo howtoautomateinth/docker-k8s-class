@@ -26,3 +26,13 @@ Workshop and examples for docker and k8s class
 - [Travis](https://travis-ci.org/) Account (Optional)
 - [AWS Free Account](https://aws.amazon.com/) (Optional)
   
+## Verify your machine with following command
+- Docker
+  - docker run hello-world
+- K8S
+  - kubectl cluster-info
+- Package Manager
+  - Window
+    - choco -?
+  - Mac
+    - brew --version
