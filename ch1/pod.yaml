@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   name: simpleapp
   labels:
+    app: simpleapp
     env: development
 spec:
   containers:
