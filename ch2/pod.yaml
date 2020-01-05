@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simpleapp-ch2
+  labels:
+    app: simpleapp-ch2
+    env: development
+spec:
+  containers:
+  - name: simpleapp
+    image: howtoautomateinth/docker-simpleapp:v1.1
+    ports:
+    - containerPort: 5000
+    env:
+      - name: databasePassword
+        valueFrom:
+          secretKeyRef:
+            name: cats-and-dogs
+            key: example
