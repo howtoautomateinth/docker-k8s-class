@@ -10,12 +10,11 @@ Workshop and examples for docker and k8s class
       - [Docker for window](https://docs.docker.com/docker-for-windows/install/)
     - Window 10 Home and below
       - [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
-- K8S (Required)
+- K8S [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)  (Required)
   - Mac
-    - Enable on settings
+    - brew install minikube
   - Window
-    - Enable on settings
-    - [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) (Optional)
+    - choco install minikube
 - Useful Tools
   - Window
     - [Chocolatey](https://chocolatey.org/install#individual)
@@ -26,10 +25,13 @@ Workshop and examples for docker and k8s class
 - [Travis](https://travis-ci.org/) Account (Optional)
 - [AWS Free Account](https://aws.amazon.com/) (Optional)
   
+Recommended: Do not use kubernetes that packed with Docker for Desktop
+
 ## Verify your machine with following command
 - Docker
   - docker run hello-world
 - K8S
+  - minikube status
   - kubectl cluster-info
 - Package Manager
   - Window
