@@ -13,6 +13,7 @@ Workshop and examples for docker and k8s class
 - K8S [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/)  (Required)
   - Mac
     - brew install minikube
+    - [kubectl alias](https://github.com/ahmetb/kubectl-aliases)
   - Window
     - choco install minikube
 - Useful Tools
