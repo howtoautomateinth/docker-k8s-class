@@ -44,6 +44,6 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
 - K8S
   - k get all
   - k delete all --all
-  - k exec pod/busybox -i -t -- <<command>>
-  - k logs <<pod name>>
-  - k describe <<service name>> <<name>>
+  - k exec pod/busybox -i -t -- (command)
+  - k logs (pod name)
+  - k describe (service name) (name)
