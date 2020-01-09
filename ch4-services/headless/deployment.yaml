@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simpleapp-deploy
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: simpleapp
+  template:
+    metadata:
+      labels:
+        app: simpleapp
+    spec:
+      containers:
+      - name: simpleapp
+        image: howtoautomateinth/docker-simpleapp:v1.1
+        ports:
+        - containerPort: 5000
+        env:
+        - name: SIMPLE_APP_VERSION
+          value: "1.1"
