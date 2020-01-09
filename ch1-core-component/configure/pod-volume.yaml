@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simpleapp
+  labels:
+    app: simpleapp
+    env: development
+spec:
+  volumes:
+    - name: example-configmap-volume
+      configMap:
+        name: example-configmap
+  containers:
+    - name: simpleapp
+      image: howtoautomateinth/docker-simpleapp:v1.1
+      ports:
+        - containerPort: 5000
+    volumeMounts:
+      - name: example-configmap-volume
+        mountPath: /etc/config  
