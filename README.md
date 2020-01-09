@@ -39,3 +39,11 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
     - choco -?
   - Mac
     - brew --version
+
+## Useful Troubleshooting Command in this class
+- K8S
+  - k get all
+  - k delete all --all
+  - k exec pod/busybox -i -t -- <<command>>
+  - k logs <<pod name>>
+  - k describe <<service name>> <<name>>
