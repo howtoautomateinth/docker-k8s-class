@@ -1,4 +1,6 @@
-# to apply this kustomization use `k apply -k .`
+# if you use alias please us `kk .`
+# if not use kubectl kustomize .
+# to apply use kubectl apply -k .
 commonLabels:
     apptype: REST
 resources:
