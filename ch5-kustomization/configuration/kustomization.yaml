@@ -1,0 +1,7 @@
+# if you use alias please us `kk .`
+# if not use kubectl kustomize .
+# to apply use kubectl apply -k .
+configMapGenerator:
+- name: example-configmap-1
+  files:
+  - application.properties

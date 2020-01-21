@@ -1,0 +1,5 @@
+# to apply this kustomization use `k apply -k .`
+commonLabels:
+    apptype: REST
+resources:
+  - pod.yaml
