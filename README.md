@@ -48,3 +48,4 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
   - k logs (pod name)
   - k describe (service name) (name)
   - minikube service list
+  - minikube dashboard
