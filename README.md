@@ -49,3 +49,9 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
   - k describe (service name) (name)
   - minikube service list
   - minikube dashboard
+  
+- printenv
+  - will show all env. that use in the POD and lead to find information 
+  
+- dashboard
+  - we can see many information and secret in there
