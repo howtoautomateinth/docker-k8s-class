@@ -47,3 +47,4 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
   - k exec pod/busybox -i -t -- (command)
   - k logs (pod name)
   - k describe (service name) (name)
+  - minikube service list
