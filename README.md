@@ -40,8 +40,8 @@ Recommended: Do not use kubernetes that packed with Docker for Desktop
   - Mac
     - brew --version
 
-## Useful Troubleshooting Command in this class
-- K8S
+## Useful troubleshooting techniques
+- K8S command
   - k get all
   - k delete all --all
   - k exec pod/busybox -i -t -- (command)
