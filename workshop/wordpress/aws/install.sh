@@ -1,0 +1,1 @@
+helm install my-wordpress stable/wordpress
