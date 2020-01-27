@@ -33,20 +33,29 @@ eksctl create cluster \
 --managed
 ```
 
+- use helm to install wordpress via *install.sh*
+- kubectl get all
+  - in this step, you should see a list of pod and service that running on eks
+
 *change name argument and ssh-public-key to the desired name*
+*ssh-public-key default will trying to find in local first then will find in EC2 keypair*
 
 ## Recommendation
 
 - Create Cluster with specific user
   - If console, please use user that generated for cluster not root user
-  - If CLI, please user eksctl 
+  - If CLI, please user eksctl
     - user for cluster need **IAM policy** (If don't sure please select full access for all services)
       - ec2 key
       - cloudformation create
       - eks full access
       - iam create
+- In case you want switch back to minikube
+  - eksctl delete cluster -n hta-cluster
+  - kubectl config get-contexts (should be minikube)
 
 ## Troblueshooting commandline
 
 - aws sts get-caller-identity
 - kubectl get svc --v=10
+  
