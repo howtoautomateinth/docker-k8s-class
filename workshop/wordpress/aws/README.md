@@ -14,6 +14,9 @@ Example how to deploy wordpress on AWS EKS
 ## Steps
 
 - eksctl create cluster
+    - for testing purpose (it need to show cluster endpoint instead of minikube)
+      - kubectl get svc
+      - kubectl config get-contexts
 
 ```
 eksctl create cluster \
