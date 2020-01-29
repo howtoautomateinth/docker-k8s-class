@@ -53,6 +53,7 @@ eksctl create cluster \
 - In case you want switch back to minikube
   - eksctl delete cluster -n hta-cluster
   - kubectl config get-contexts (should be minikube)
+- *for security reason, dont use console switch with cli it may occur security problem on cloudformation*
 
 ## Troblueshooting commandline
 
