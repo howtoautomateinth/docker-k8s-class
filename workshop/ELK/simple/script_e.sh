@@ -1,0 +1,1 @@
+helm install elasticsearch elastic/elasticsearch -f ./values.yaml
