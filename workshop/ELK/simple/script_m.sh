@@ -1,0 +1,1 @@
+helm install metricbeat elastic/metricbeat
