@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: howtoautomateinth/docker-simpleapp:v1.1
+    ports:
+      - "80:5000"
