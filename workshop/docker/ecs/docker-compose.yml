@@ -4,3 +4,9 @@ services:
     image: howtoautomateinth/docker-simpleapp:v1.1
     ports:
       - "80:5000"
+    logging:
+      driver: awslogs
+      options: 
+        awslogs-group: ec2-tutorial
+        awslogs-region: us-west-2
+        awslogs-stream-prefix: web
