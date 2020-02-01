@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+build:
+  artifacts:
+  - image: simpleapp-skaffold
+    context: python
+    sync:
+      infer:
+      - '**/*.py'
+deploy:
+  kubectl:
+    manifests:
+      - ./k8s/k8s-*

@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simpleapp-service
+  labels:
+    run: simpleapp
+spec:
+  type: NodePort
+  ports:
+  - 
+    # Inside the cluster, port of this service
+    port: 8080
+    # Service port that are going to expose
+    targetPort: 5000
+     # Port node that can accessible (30000-32767)
+    nodePort: 31366
+    name: http
+  selector:
+    app: simpleapp
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simpleapp
+  labels:
+    app: simpleapp
+    env: development
+spec:
+  containers:
+  - name: simpleapp
+    image: simpleapp-skaffold
+    ports:
+    - containerPort: 5000
