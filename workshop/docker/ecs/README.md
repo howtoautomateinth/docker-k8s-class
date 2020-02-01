@@ -1,7 +1,9 @@
 # How to use AWS ECS tutorial
 Example usage of ECS
 
-![overview](https://miro.medium.com/max/668/1*k29gxIwwhDaP-Ge-G-yXCQ.png)
+![overview](https://cdn-media-1.freecodecamp.org/images/scH1QJHgrQ6NgA1jQo9ITuCiQGkAawRHmzSc)
+
+*Thanks image from [here](https://cdn-media-1.freecodecamp.org/images/scH1QJHgrQ6NgA1jQo9ITuCiQGkAawRHmzSc)*
 
 ## Definition
 
