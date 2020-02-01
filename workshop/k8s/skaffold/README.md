@@ -39,3 +39,6 @@ Inside *skaffold.yaml* it depend on above stages which we can interact with
 - skaffold dev (for local testing)
     - change code in *python/**/*.py* will immediately effect on local cluster
     - changed will watching by skaffold and deploy to local cluster via kubectl with *k8s/k8s-* pattern 
+
+## References
+- [Skaffold YAML references](https://skaffold.dev/docs/references/yaml/)
