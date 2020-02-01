@@ -58,3 +58,6 @@ ecs-cli compose service up --cluster-config ec2-tutorial --ecs-profile ec2-tutor
 ecs-cli compose service rm --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile
 ecs-cli down --force --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile
 ```
+
+### References
+- [Loadbalance with ECS](https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d)
