@@ -1,5 +1,5 @@
 
-# Wordpress on EKS tutorial
+# Wordpress on GKE tutorial
 
 Example how to deploy wordpress on Google Cloud Platform
 
