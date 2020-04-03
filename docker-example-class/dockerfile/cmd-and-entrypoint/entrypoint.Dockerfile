@@ -1,3 +1,7 @@
+# docker build -t demo:entry -f entrypoint.Dockerfile .
+# docker run --rm demo:entry
+# docker run demo:entry screenfetch -E
+
 FROM debian:jessie-slim
 
 RUN apt-get update && \
@@ -8,7 +12,3 @@ RUN apt-get update && \
 
 ENV PATH "$PATH:/usr/games"
 ENTRYPOINT ["cowsay", "Yo, Entrypoint!!"]
-
-#docker build -t demo:entry -f Dockerfile-entry .
-#docker run --rm demo:entry
-#docker run demo:entry screenfetch -E

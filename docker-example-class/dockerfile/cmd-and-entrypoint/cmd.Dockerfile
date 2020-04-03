@@ -1,3 +1,7 @@
+# docker build -t demo:cmd -f cmd.Dockerfile .
+# docker run --rm demo:cmd
+# docker run --rm demo:cmd screenfetch -E
+
 FROM debian:jessie-slim
 
 RUN apt-get update && \
@@ -9,6 +13,3 @@ RUN apt-get update && \
 ENV PATH "$PATH:/usr/games"
 CMD ["cowsay", "Yo, CMD !!"]
 
-#docker build -t demo:cmd -f Dockerfile-cmd .
-#docker run --rm demo:cmd
-#docker run --rm demo:cmd screenfetch -E
