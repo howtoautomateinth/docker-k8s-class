@@ -1,0 +1,1 @@
+print('Hello World! Docker and K8S class')
