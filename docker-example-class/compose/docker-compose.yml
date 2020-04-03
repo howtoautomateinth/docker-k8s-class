@@ -6,6 +6,10 @@ services:
       dockerfile: DockerFile
     ports:
       - "5000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
     networks: 
         - front
         - back
