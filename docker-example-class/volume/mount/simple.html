@@ -1,11 +1,14 @@
-<!-- docker run --name some-nginx -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx -->
+<!-- 
+    docker run --name some-nginx -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx 
+    docker inspect --format="{{json .Mounts}}" some-nginx | jq 
+-->
 
 <!doctype html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
+  <title>The HTML5</title>
   <meta name="description" content="The HTML5 example">
   <meta name="author" content="Howtoautomate.in.th">
 </head>

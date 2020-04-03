@@ -1,0 +1,5 @@
+docker volume create DataVolume
+docker inspect some-nginx --format="{{json .Mounts}}" | jq
+docker run --name some-nginx-1 -v DataVolume:/usr/share/nginx/html -d -p 8080:80 nginx
+docker run --name some-nginx-2 -v DataVolume:/usr/share/nginx/html -d -p 8081:80 nginx
+docker run --name some-nginx-3 -v DataVolume:/usr/share/nginx/html -d -p 8082:80 nginx
