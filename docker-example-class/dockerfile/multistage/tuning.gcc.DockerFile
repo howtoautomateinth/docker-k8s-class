@@ -1,3 +1,5 @@
+# docker build --tag tunning --file tuning.gcc.DockerFile .
+
 FROM alpine:3.7 AS build
 RUN apk update && \
     apk add --update alpine-sdk
