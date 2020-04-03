@@ -1,0 +1,15 @@
+docker network create my-net
+
+# default
+docker create --name my-nginx \
+  --publish 8080:80 \
+  nginx:latest
+
+# User-defined
+docker create --name my-nginx \
+  --network my-net \
+  --publish 8080:80 \
+  nginx:latest
+
+docker inspect my-nginx  
+  

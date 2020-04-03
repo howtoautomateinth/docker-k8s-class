@@ -1,0 +1,12 @@
+docker network create network1
+docker run -itd --name container1 --network network1 busybox
+docker run -itd --name container2 --network network1 busybox
+docker network inspect network1 --format="{{json .Containers}}" | jq
+docker exec -it container1 ping container2
+
+docker network create network2
+docker run -itd --name container3 --network network2 busybox
+docker network inspect network2 --format="{{json .Containers}}" | jq
+docker exec -it container3 ping container2
+
+
