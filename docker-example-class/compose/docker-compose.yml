@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "5000:5000"
+    networks: 
+        - front
+        - back
+  redis:
+    image: "redis:alpine"
+    networks: 
+        - back
+volumes:
+  composedata:
+networks: 
+    front:
+    back:
+        
