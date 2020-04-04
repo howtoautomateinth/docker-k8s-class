@@ -1,0 +1,31 @@
+# docker-compose build
+# docker-compose up -d
+# docker-compose ps
+# docker-compose logs -f app
+
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:5.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - db-net
+
+  app:
+    build: 
+      context: .
+      dockerfile: dockerize.DockerFile
+    ports:
+      - 3000:3000
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    networks:
+      - db-net
+
+networks:
+  db-net:
+    driver: bridge
