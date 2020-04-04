@@ -1,0 +1,13 @@
+commonLabels:
+    app: simpleapp
+    env: development
+namePrefix: demo-
+
+resources:
+  - pod-a.yaml
+  - pod-b.yaml
+  - deployment.yaml
+
+patchesStrategicMerge:
+- increase_replicas.yaml
+- set_memory.yaml

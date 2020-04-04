@@ -1,0 +1,4 @@
+resources:
+- deployment.yaml
+patchesStrategicMerge:
+- add_container_port.yaml
