@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-nginx-app
+  labels:
+    app: simpleapp
+    env: development
+spec:
+  containers:
+  - name: nginx-app
+    image: nginx
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: mypv
+      mountPath: "/tmp/persistent"
+  volumes:
+  - name: mypv
+    persistentVolumeClaim:
+      claimName: myclaim

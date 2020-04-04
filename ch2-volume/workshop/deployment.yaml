@@ -1,0 +1,28 @@
+# ka ch2-volume
+# kg pv
+# kg pvc
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pv-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mypv
+  template:
+    metadata:
+      labels:
+        app: mypv
+    spec:
+      containers:
+      - name: simpleapp
+        image: howtoautomateinth/docker-simpleapp:v1.1
+        volumeMounts:
+        - name: mypv
+          mountPath: "/tmp/persistent"
+      volumes:
+      - name: mypv
+        persistentVolumeClaim:
+          claimName: myclaim
