@@ -1,4 +1,8 @@
-apiVersion: skaffold/v2alpha3
+# skaffold dev
+# kg all
+# minikube ip
+
+apiVersion: skaffold/v2beta1
 kind: Config
 build:
   artifacts:
