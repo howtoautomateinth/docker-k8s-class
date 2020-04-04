@@ -1,0 +1,4 @@
+configMapGenerator:
+- name: game-config
+  files:
+  - ./directories-file/game.properties

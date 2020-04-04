@@ -1,0 +1,11 @@
+# from directories
+kubectl create configmap game-config --from-file=./directories-file/configmap
+
+# from file
+kubectl create configmap game-config --from-file=/directories-file/configmap/game.properties
+
+# from literal
+kubectl create configmap special-config --from-literal=special.how=very --from-literal=special.type=charm
+
+kubectl describe configmaps game-config
+kubectl get configmaps game-config -o yaml
