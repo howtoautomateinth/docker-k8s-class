@@ -1,4 +1,7 @@
 # run with busybox to view nginx
+# kubectl port-forward -n default pod/nginx-deployment-7dbc5548c4-rjqpn  5555:80    
+# http://localhost:8001/api/v1/namespaces/default/services/nginx-svc:80/proxy/
+# https://gardener.cloud/050-tutorials/content/howto/access_pod_from_local/
 
 apiVersion: apps/v1
 kind: Deployment
