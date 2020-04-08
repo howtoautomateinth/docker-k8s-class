@@ -21,6 +21,7 @@ services:
       dockerfile: dockerize.DockerFile
     ports:
       - 3000:3000
+    restart: always
     environment:
       - MYSQL_HOST=mysql
       - MYSQL_USER=root
