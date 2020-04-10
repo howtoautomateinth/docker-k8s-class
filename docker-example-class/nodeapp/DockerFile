@@ -1,0 +1,11 @@
+FROM node:8.7.0
+
+WORKDIR /app
+
+RUN npm install express
+
+COPY app.js .
+
+EXPOSE 3000
+
+CMD [ "node", "app.js" ]

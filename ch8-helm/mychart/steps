@@ -1,0 +1,24 @@
+# add repo
+helm repo list
+helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+
+# custom steps
+helm install mychart
+helm install --generate-name mychart --dry-run --debug
+helm install --generate-name mychart --dry-run --debug --set service.internalPort=8080
+helm install --generate-name mychart --set service.type=NodePort
+
+# update helm
+change values.yaml image to new repository 
+    repository: prydonius/todo
+    tag: 1.0.0
+
+# check templates are well-formed
+helm lint ./mychart
+
+# package
+helm package ./mychart  
+
+# install
+helm install example2 ./mychart --set service.type=NodePort
+helm install example3 mychart-0.1.0.tgz --set service.type=NodePort

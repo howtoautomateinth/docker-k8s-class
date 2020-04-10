@@ -11,5 +11,6 @@ docker create --name my-nginx \
   --publish 8080:80 \
   nginx:latest
 
+docker start my-nginx
 docker inspect my-nginx  
   
